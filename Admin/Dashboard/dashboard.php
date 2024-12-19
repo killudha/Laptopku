@@ -1,6 +1,6 @@
 <?php
 // Connect to the database
-include 'C:\xampp\htdocs\PBL-Kel6-Laptopku\config.php';
+include 'C:\xampp\htdocs\Laptopku\config.php';
 
 // Query to retrieve data from the database
 try {
@@ -9,8 +9,8 @@ try {
     $total_products = $stmt->fetch(PDO::FETCH_ASSOC)['total_products'];
 
     // Active Users
-    $stmt = $conn->query("SELECT COUNT(*) AS active_users FROM users WHERE status = 'active'");
-    $active_users = $stmt->fetch(PDO::FETCH_ASSOC)['active_users'];
+    // $stmt = $conn->query("SELECT COUNT(*) AS active_users FROM users WHERE status = 'active'");
+    // $active_users = $stmt->fetch(PDO::FETCH_ASSOC)['active_users'];
 
     // Get order status data
     $stmt = $conn->query("SELECT 
