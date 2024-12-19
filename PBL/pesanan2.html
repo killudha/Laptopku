@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="user.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Russo+One&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Pesanan2 - Laptopku.</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">LAPTOPKU.</div>
+        <div class="nav-links">
+            <a href="home-login.html">Home</a>
+            <a href="product-login.html">Shopping</a>
+            <a href="cart.html" class="cartimg"><img src="img/chart-icon.png" alt="profile user"></a>
+            <a href="profile.html"><img src="img/pp.png" alt="profile user"></a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="menu">
+            <div class="menu-container">
+                <p onclick="window.location.href='profile.html';">Profile</p>
+                <p onclick="window.location.href='pesanan.html';">Pesanan</p>
+                <p onclick="window.location.href='review.html';">Ulasan</p>
+                <p onclick="window.location.href='riwayat.html';">Riwayat</p>
+                <a href="home.html"><i class="fa fa-sign-out"></i></a>
+                <hr>
+                <a href="profile.html">Sign Out</a>            
+            </div>     
+        </div> 
+        <div class="main-content">
+            <div class="title">Pesanan</div>
+            <div class="track">
+                <p>Order Tracker</p>
+                <p>5 Items</p>
+            </div>
+
+            <hr>
+
+            <div class="status-container">
+                <div class="status-item" onclick="window.location.href='pesanan.html';" style="cursor: pointer;">
+                    <img src="img/bayar.png" alt="payment">
+                    <p>Belum<br>Bayar</p>
+                </div>
+                <div class="status-item" onclick="window.location.href='pesanan2.html';" style="cursor: pointer;">
+                    <img src="img/dikemas.png" alt="package">
+                    <p><span class="pay">Dikemas</span></p>
+                </div>
+                <div class="status-item" onclick="window.location.href='pesanan3.html';" style="cursor: pointer;">
+                    <img src="img/dikirim.png" alt="delivery">
+                    <p>Dikirim</p>
+                </div>
+                <div class="status-item" onclick="window.location.href='pesanan4.html';" style="cursor: pointer;">
+                    <img src="img/nilai.png" alt="rate">
+                    <p>Beri<br>Penilaian</p>
+                </div>
+            </div>
+            <div class="track">
+                <p>Belum Bayar</p>
+            </div>
+            <div class="order-card">
+                <div class="detail-order">
+                    <p><span class="order-id">Order: #001238</span></p>
+                    <div class="detail">
+                        <p><span class="price">Total 1 Produk: </span>Rp. 8.500.000</p>
+                        <p><span class="price">Resi: </span>13141849157912</p>
+                    </div>
+                </div>
+                <div class="btn-payment">
+                    <button class="payment-button" onclick="window.location.href='detail-tracker.html';">Detail</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="footer">
+        <div class="brand">LAPTOPKU.</div>
+        <div class="tagline">Toko Online Laptop</div>
+        <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#"><i class="fa-regular fa-envelope"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-discord"></i></a>
+        </div>
+        <hr class="garis">
+        <div class="copyright">
+            Copyright © 2024 Laptopku
+        </div>
+    </section>
+    </body>
+    </html>
+</body>
+</html>

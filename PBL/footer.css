@@ -1,0 +1,98 @@
+/* Footer */
+.footer {
+    width: 100%;
+    flex-shrink: 0;
+    background: #3F3F3E;
+    color : white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.brand {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #D9D9D9;
+    font-family: "Russo One";
+    font-size: 37px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: left;
+    padding-left: 40px;
+}
+
+.tagline {
+    font-size: 14px;
+    color: #D9D9D9;
+    font-family: "Russo One";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: left;
+    padding-left: 40px;
+}
+
+.social-icons {
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    color: #DCDCDC;
+    text-decoration: none;
+    margin: 0 5px;
+    font-size: 22px;
+    transition: all 0.3s ease;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;        
+    border-radius: 50%;
+    border: 3px solid #DCDCDC;
+}
+
+.social-icons a:hover .fa-whatsapp {
+    color: #25D366;
+}
+.social-icons a:hover.whatsapp {
+    border-color: #25D366;
+}
+
+.social-icons a:hover .fa-envelope {
+    color: #EA4335;
+}
+.social-icons a:hover.envelope {
+    border-color: #EA4335;
+}
+
+.social-icons a:hover .fa-instagram {
+    color: #a240e4;
+}
+.social-icons a:hover.instagram {
+    border-color: #a240e4;
+}
+
+.social-icons a:hover .fa-discord {
+    color: #7289DA;
+}
+.social-icons a:hover.discord {
+    border-color: #7289DA;
+}
+
+.garis {
+    border: none;
+    height: 1px;
+    background: #DCDCDC;
+    width: auto;
+}
+
+.copyright {
+    color: #D9D9D9;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding : 15px;
+}
