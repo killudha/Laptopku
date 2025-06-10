@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="detail.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Russo+One&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Detail - Laptopku.</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">LAPTOPKU.</div>
+        <div class="nav-links">
+            <a href="home-login.html">Home</a>
+            <a href="cart.html" class="cartimg"><img src="img/chart-icon.png" alt="profile user"></a>
+            <a href="profile.html"><img src="img/pp.png" alt="profile user"></a>
+            <a href="home.html"><i class="fa fa-sign-out"></i></a>
+        </div>
+    </nav>
+    
+    <!--detail produk-->
+    <button class="back" onclick="window.history.back();">
+        <i class="fa fa-angle-left"></i>
+    </button>
+    <div class="card-detail">
+        <div class="product-image">
+            <img src="img/vivobook.png" alt="Asus Vivobook ProArt">
+        </div>
+        <div class="product-info">
+            <h1 class="product-title">Asus Vivobook</h1>
+            <div class="product-price">Rp.8.500.000</div>
+            <ul class="specs-list">
+                <li>Asus Vivobook</li>
+                <li>Intel Core i5</li>
+                <li>RAM 12 GB dan Nvidia Geforce GT 650M 2GB</li>
+                <li>14 inch & SSD 1TB</li>
+            </ul>
+            <p class="product-description">
+                Cocok untuk sekolah atau kuliah, ringan, dan memiliki baterai tahan lama, ideal untuk multitasking dan belajar.
+            </p>
+            <div class="quantity-control">
+                <button class="quantity-btn" onclick="decreaseQuantity()">-</button>
+                <span id="quantity">1</span>
+                <button class="quantity-btn" onclick="increaseQuantity()">+</button>
+                <div class="btntocart">
+                    <button class="cart"><i class="fa fa-shopping-cart"></i></button>
+                    <button class="add-to-cart">Tambah ke keranjang</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Ulasan-->
+    <div class="container-ulasan">
+        <h2 class="title">Ulasan<span class="blue-text-title"> Product</span></h2>
+        <div class="card-ulasan">
+            <div class="img-pp">
+            <img src="img/pp.png" alt="profile"></div>
+            <div class="ulasan">
+                <h1>4,5</h1>
+                <h2>Azkia Intan Sahila</h2>
+                <p>Pengiriman cepat, barang juga original dan bagus. terimakasih. Sangat sesuai dengan budget, dan mantappp!</p>
+            </div>
+        </div>
+
+        <div class="card-ulasan">
+            <div class="img-pp">
+            <img src="img/pp.png" alt="profile"></div>
+            <div class="ulasan">
+                <h1>4,5</h1>
+                <h2>Azkia Intan Sahila</h2>
+                <p>Pengiriman cepat, barang juga original dan bagus. terimakasih. Sangat sesuai dengan budget, dan mantappp!</p>
+            </div>
+        </div>
+
+        <div class="card-ulasan">
+            <div class="img-pp">
+            <img src="img/pp.png" alt="profile"></div>
+            <div class="ulasan">
+                <h1>4,5</h1>
+                <h2>Azkia Intan Sahila</h2>
+                <p>Pengiriman cepat, barang juga original dan bagus. terimakasih. Sangat sesuai dengan budget, dan mantappp!</p>
+            </div>
+        </div>
+    </div>
+
+<!--Footer-->
+<section class="footer">
+    <div class="brand">LAPTOPKU.</div>
+    <div class="tagline">Toko Online Laptop</div>
+    <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="#"><i class="fa-regular fa-envelope"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-discord"></i></a>
+    </div>
+    <hr class="garis">
+    <div class="copyright">
+        Copyright © 2024 Laptopku
+    </div>
+</section>
+</body>
+</html>
+
+<script>
+    // Variabel untuk menyimpan jumlah produk
+    let quantity = 1;
+
+    // Fungsi untuk menambah jumlah
+    function increaseQuantity() {
+        quantity++;
+        document.getElementById("quantity").textContent = quantity;
+    }
+
+    // Fungsi untuk mengurangi jumlah, memastikan tidak kurang dari 1
+    function decreaseQuantity() {
+        if (quantity > 1) {
+            quantity--;
+            document.getElementById("quantity").textContent = quantity;
+        }
+    }
+</script>

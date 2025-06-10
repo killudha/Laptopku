@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Russo+One&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Ulasan - Laptopku.</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">LAPTOPKU.</div>
+        <div class="nav-links">
+            <a href="home-login.html">Home</a>
+            <a href="product-login.html">Shopping</a>
+            <a href="cart.html" class="cartimg"><img src="img/chart-icon.png" alt="profile user"></a>
+            <a href="profile.html"><img src="img/pp.png" alt="profile user"></a>
+        </div>
+    </nav>
+
+    <!--ulasan Method-->
+    <div class="container">
+        <h2 class="title"><span class="blue-text-title">Ulasan</span> Product</h2>
+        <div class="card-pay">
+            <div class="content-ulasan">
+                <div class="img-ulasan">
+                    <h2>Asus Vivobook</h2>
+                    <img src="img/vivobook.png" alt="Asus Vivobook">
+                </div>
+                <div class="form-payment">
+                    <form action="#" method="post">
+                        <label for="nama">Nama :</label>
+                        <input type="text" id="nama" name="nama" required>
+
+                        <label for="rating">Rating :</label>
+                        <input type="text" id="rating" name="rating" required>
+
+                        <label for="deskripsi">Deskripsi :</label>
+                        <input type="text" id="deskripsi" name="rating" required>
+
+                        <div class="btn-pay">
+                            <button type="submit" class="back-button" onclick="window.history.back();">Batal</button>
+                            <button type="submit" class="pay-button">Kirim Ulasan</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>    
+    </div>
+
+    <!--Footer-->
+    <section class="footer">
+        <div class="brand">LAPTOPKU.</div>
+        <div class="tagline">Toko Online Laptop</div>
+        <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#"><i class="fa-regular fa-envelope"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-discord"></i></a>
+        </div>
+        <hr class="garis">
+        <div class="copyright">
+            Copyright © 2024 Laptopku
+        </div>
+    </section>
+</body>
+</html>

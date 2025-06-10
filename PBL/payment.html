@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="detail.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Russo+One&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Payment - Page</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">LAPTOPKU.</div>
+        <div class="nav-links">
+            <a href="home-login.html">Home</a>
+            <a href="profile.html"><img src="img/pp.png" alt="profile user"></a>
+            <a href="home.html"><i class="fa fa-sign-out"></i></a>
+        </div>
+    </nav>
+
+    <!--Payment Method-->
+    <div class="container">
+        <h2 class="title"><span class="green-text-title">Payment</span> Method</h2>
+
+        <button class="back" onclick="window.history.back();">
+            <i class="fa fa-angle-left"></i>
+        </button>
+
+        <div class="card-pay">
+            <div class="content-payment">
+                <div class="select-payment">
+                    <form action="#">
+                        <input type="radio" name="payment" id="mandiri">
+                        <input type="radio" name="payment" id="bca">
+                        <input type="radio" name="payment" id="bri">
+
+                        <div class="category">
+                            <label for="mandiri" class="mandiriMethod">
+                                <div class="imgName">
+                                    <div class="imgContainer">
+                                        <img src="img/mandiri.png" alt="Bank Mandiri">
+                                    </div>
+                                </div>
+                                <span class="check"><i class="fa-solid fa-circle-check" style="color: #45a33a;"></i></span>
+                            </label>
+                            
+                            <label for="bca" class="bcaMethod">
+                                <div class="imgName">
+                                    <div class="imgContainer">
+                                        <img src="img/bca.png" alt="Bank Mandiri">
+                                    </div>
+                                </div>
+                                <span class="check"><i class="fa-solid fa-circle-check" style="color: #45a33a;"></i></span>
+                            </label>
+                            
+                            <label for="bri" class="briMethod">
+                                <div class="imgName">
+                                    <div class="imgContainer">
+                                        <img src="img/bri.png" alt="Bank Mandiri">
+                                    </div>
+                                </div>
+                                <span class="check"><i class="fa-solid fa-circle-check" style="color: #45a33a;"></i></span>
+                            </label>
+                        </div>
+                    </form>
+                </div>
+                <div class="form-payment">
+                    <h2><span class="payment-title">Jumlah Total :</span> <span class="total-amount">Rp.33.515.000</span></h2>
+                    <form action="#" method="post">
+                        <label for="name">Nama Kartu :</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="card-number">Nomor Kartu :</label>
+                        <input type="text" id="card-number" name="card-number" required>
+
+                        <div class="expiration-cvv">
+                            <div class="expiry">
+                                <label for="month">Bulan :</label>
+                                <input type="text" id="month" name="month" required>
+                            </div>
+                            <div class="expiry">
+                                <label for="year">Tahun :</label>
+                                <input type="text" id="year" name="year" required>
+                            </div>
+                            <div class="cvv">
+                                <label for="cvv">CVV :</label>
+                                <input type="text" id="cvv" name="cvv" required>
+                            </div>
+                        </div>
+                        <div class="btn-pay">
+                        <button type="submit" class="back-button" onclick="window.location.href='home-login.html';">Bayar nanti</button>
+                        <button type="submit" class="pay-button">Bayar Sekarang</button></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Footer-->
+    <section class="footer">
+        <div class="brand">LAPTOPKU.</div>
+        <div class="tagline">Toko Online Laptop</div>
+        <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#"><i class="fa-regular fa-envelope"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-discord"></i></a>
+        </div>
+        <hr class="garis">
+        <div class="copyright">
+            Copyright © 2024 Laptopku
+        </div>
+    </section>
+</body>
+</html>

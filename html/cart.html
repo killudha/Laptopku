@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Russo+One&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="app.js" defer></script>
+    <title>Home - Laptopku.</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">LAPTOPKU.</div>
+        <div class="nav-links">
+            <a href="home-login.html">Home</a>
+            <a href="profile.html"><img src="img/pp.png" alt="profile user"></a>
+            <a href="home.html"><i class="fa fa-sign-out"></i></a>
+        </div>
+    </nav>
+
+    <div class="container">
+    <h2 class="title">Your<span class="blue-text-title"> Cart</span></h2>
+    <div class="container-cart">
+        <div class="cart">
+            <div class="cart-items">
+                <div class="total-items">
+                    <h1>Shopping Cart</h1>
+                    <h1>3 Items</h1>
+                </div>
+                <hr>
+                <!-- Header Section -->
+                <div class="cart-header">
+                    <div class="header-item"></div>
+                    <div class="header-price">Item & Price</div>
+                    <div class="header-qty">Qty</div>
+                    <div class="header-subtotal">Sub Total</div>
+                </div>
+                <!-- Item 1 -->
+                <div class="item">
+                    <div class="detail">
+                        <img src="img/vivobook.png" alt="Asus Vivobook">
+                        <div class="item-details">
+                            <p>Asus Vivobook</p>
+                            <p class="price">Rp 8.500.000</p>
+                        </div>
+                        <div class="quantity-control">
+                            <button class="quantity-btn decrease">-</button>
+                            <span class="quantity">1</span>
+                            <button class="quantity-btn increase">+</button>
+                        </div>
+                        
+                        <div class="subtotal">
+                            <p>Rp 8.500.000</p>
+                        </div>
+                    </div>
+                    <!-- Pisahkan tombol tong sampah -->
+                    <div class="delete-container">
+                        <button class="trashbtn"><i class="fa fa-trash"></i></button>
+                    </div>
+                </div>
+                
+
+                <!-- Item 2 -->
+                <div class="item">
+                    <div class="detail">
+                        <img src="img/vivobook.png" alt="Asus Vivobook">
+                        <div class="item-details">
+                            <p>Asus Vivobook</p>
+                            <p class="price">Rp 8.000.000</p>
+                        </div>
+                        <div class="quantity-control">
+                            <button class="quantity-btn decrease">-</button>
+                            <span class="quantity">1</span>
+                            <button class="quantity-btn increase">+</button>
+                        </div>
+                        
+                        <div class="subtotal">
+                            <p>Rp 8.500.000</p>
+                        </div>
+                    </div>
+                    <!-- Pisahkan tombol tong sampah -->
+                    <div class="delete-container">
+                        <button class="trashbtn"><i class="fa fa-trash"></i></button>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="item">
+                    <div class="detail">
+                        <img src="img/vivobook.png" alt="Asus Vivobook">
+                        <div class="item-details">
+                            <p>Asus Vivobook</p>
+                            <p class="price">Rp 8.500.000</p>
+                        </div>
+                        <div class="quantity-control">
+                            <button class="quantity-btn decrease">-</button>
+                            <span class="quantity">1</span>
+                            <button class="quantity-btn increase">+</button>
+                        </div>                        
+                        <div class="subtotal">
+                            <p>Rp 8.500.000</p>
+                        </div>
+                    </div>
+                    <!-- Pisahkan tombol tong sampah -->
+                    <div class="delete-container">
+                        <button class="trashbtn"><i class="fa fa-trash"></i></button>
+                    </div>
+                </div>
+                </div>
+          <!-- Sidebar -->
+          <div class="sidebar">
+            <div class="total-items">
+                <h1>Order Summary</h1>
+            </div>
+            <hr>
+            <div class="address">
+              <h3>Alamat Pengiriman</h3>
+              <input type="text" placeholder="Nama Lengkap">
+              <input type="text" placeholder="Nomor Telepon">
+              <input type="text" placeholder="Provinsi, Kota, Kecamatan, Kode Pos">
+              <input type="text" placeholder="Nama Jalan, Gedung, No. Rumah">
+              <textarea placeholder="Detail Lainnya (Cth: Blok / Unit No, Patokan)"></textarea>
+            </div>
+            <div class="map">
+                <div class="mapswrapper"><iframe width="370" height="200" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=Depok&zoom=15&maptype=roadmap"></iframe><a href="https://www.fluxpromptgenerator.net">Prompt Generator</a><style>.mapswrapper{background:#fff;position:relative}.mapswrapper iframe{border:0;position:relative;z-index:2}.mapswrapper a{color:rgba(0,0,0,0);position:absolute;left:0;top:0;z-index:0}</style></div>
+            </div>
+            <div class="delivery">
+              <h3>Layanan Pengiriman</h3>
+              <select>
+                <option>JNE Reguler</option>
+                <option>J&T Express</option>
+              </select>
+            <div class="total-detail">
+                <p>Delivery: </p>
+                <span>Rp 15.000</span>
+            </div>
+            <div class="total-detail">
+                <p>Subtotal: </p>
+                <span>Rp 35.500.000</span>
+            </div>
+            <div class="total-detail">
+                <p>Order Total: </p>
+                <span>Rp 33.515.000</span>
+            </div>
+              <button class="make-order" onclick="window.location.href='payment.html';">Make Order</button>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+
+<!--Footer-->
+<section class="footer">
+    <div class="brand">LAPTOPKU.</div>
+    <div class="tagline">Toko Online Laptop</div>
+    <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="#"><i class="fa-regular fa-envelope"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-discord"></i></a>
+    </div>
+    <hr class="garis">
+    <div class="copyright">
+        Copyright © 2024 Laptopku
+    </div>
+</section>
+</body>
+</html>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+    // Pilih elemen yang membungkus semua produk dalam keranjang
+    const cartContainer = document.querySelector('.cart-items');
+
+    // Pastikan elemen ditemukan
+    if (cartContainer) {
+        cartContainer.addEventListener('click', function (event) {
+            // Pastikan tombol yang ditekan adalah "increase" atau "decrease"
+            if (event.target.classList.contains('increase') || event.target.classList.contains('decrease')) {
+                // Temukan elemen kuantitas terkait
+                const quantityElement = event.target.parentElement.querySelector('.quantity');
+                
+                if (quantityElement) {
+                    let quantity = parseInt(quantityElement.textContent);
+
+                    if (event.target.classList.contains('increase')) {
+                        quantity++;
+                    } else if (event.target.classList.contains('decrease') && quantity > 1) {
+                        quantity--;
+                    }
+
+                    // Perbarui jumlah kuantitas di elemen yang sesuai
+                    quantityElement.textContent = quantity;
+
+                    // Update subtotal
+                    const itemPriceElement = event.target.closest('.item').querySelector('.price');
+                    const subtotalElement = event.target.closest('.item').querySelector('.subtotal p');
+
+                    if (itemPriceElement && subtotalElement) {
+                        // Ambil harga barang, abaikan format teks
+                        const price = parseInt(itemPriceElement.textContent.replace(/[^\d]/g, ''));
+                        const subtotal = price * quantity;
+                        subtotalElement.textContent = `Rp ${subtotal.toLocaleString('id-ID')}`;
+                    }
+                }
+            }
+        });
+    }
+});
+</script>
